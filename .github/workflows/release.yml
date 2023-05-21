@@ -48,8 +48,10 @@ jobs:
         run: pnpm install
 
       - name: Setup npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo "//registry.npmjs.org/:_authToken=\${secrets.NPM_TOKEN}" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
           npm whoami
 
       - name: Create and publish versions
