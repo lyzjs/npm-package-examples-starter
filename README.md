@@ -1,0 +1,1 @@
+[![Release](https://github.com/lyzjs/npm-package-examples-starter/actions/workflows/release.yml/badge.svg)](https://github.com/lyzjs/npm-package-examples-starter/actions/workflows/release.yml)
