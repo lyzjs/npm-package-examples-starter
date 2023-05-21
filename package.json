@@ -7,7 +7,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "changeset": "changeset",
-    "changeset:version": "changeset version --tag alpha",
+    "changeset:version": "changeset version alpha",
     "changeset:publish": "changeset publish -r",
     "release": "pnpm build && pnpm changeset && pnpm changeset:version && pnpm changeset:publish"
   },
