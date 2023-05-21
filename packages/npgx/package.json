@@ -1,0 +1,45 @@
+{
+  "name": "npgx",
+  "version": "0.0.1-alpha.19",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "npm package generator x, x is variable",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "./types/index.d.ts",
+  "bin": {
+    "npgx": "dist/cjs/cli.js"
+  },
+  "exports": {
+    "types": "./types/index.d.ts",
+    "import": "./dist/es/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lyzjs/npm-package-examples-starter.git",
+    "directory": "packages/npgx"
+  },
+  "keywords": [
+    "lyzjs",
+    "rollup",
+    "npgx"
+  ],
+  "author": "lihaha <i@lihaha.cn>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyzjs/npm-package-examples-starter/issues"
+  },
+  "homepage": "https://github.com/lyzjs/npm-package-examples-starter#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "rollup": "^3.22.0",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  }
+}

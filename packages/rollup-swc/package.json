@@ -1,0 +1,42 @@
+{
+  "name": "@lyzjs/npm-package-example-rollup-swc",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "import": "./dist/es/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lyzjs/npm-package-examples-starter.git",
+    "directory": "packages/rollup-ts"
+  },
+  "keywords": [
+    "lyzjs",
+    "rollup",
+    "swc"
+  ],
+  "author": "lihaha <i@lihaha.cn>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyzjs/npm-package-examples-starter/issues"
+  },
+  "homepage": "https://github.com/lyzjs/npm-package-examples-starter#readme",
+  "devDependencies": {
+    "@rollup/plugin-swc": "^0.1.1",
+    "rollup": "^3.22.0",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4"
+  }
+}

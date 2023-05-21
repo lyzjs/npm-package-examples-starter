@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "release": "pnpm build && pnpm changeset && pnpm changeset:version && pnpm changeset:publish"
+  },
+  "author": "lihaha <i@lihaha.cn>",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "turbo": "^1.9.8"
+  }
+}
