@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    paths:
-      - "packages/**"
+    # paths:
+      # - "packages/**"
     branches:
       - main
 
@@ -48,7 +48,9 @@ jobs:
         run: pnpm install
 
       - name: Setup npmrc
-        run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+        run: |
+          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+          npm whoami
 
       - name: Create and publish versions
         uses: changesets/action@v1
