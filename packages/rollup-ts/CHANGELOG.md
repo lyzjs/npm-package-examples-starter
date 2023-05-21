@@ -1,5 +1,11 @@
 # @lyzjs/npm-package-example-rollup-ts
 
+## 2.0.0
+
+### Major Changes
+
+- 147a444: a
+
 ## 1.0.0
 
 ### Major Changes
