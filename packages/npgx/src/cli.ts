@@ -2,6 +2,6 @@
 
 console.log(new Date().toLocaleString());
 
-const main = () => console.log("4");
+const main = () => console.log("5");
 
 main();
