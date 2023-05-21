@@ -7,8 +7,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "changeset": "changeset",
-    "changeset:version": "changeset version",
-    "changeset:publish": "changeset publish",
+    "changeset:version": "changeset version --tag alpha",
+    "changeset:publish": "changeset publish -r",
     "release": "pnpm build && pnpm changeset && pnpm changeset:version && pnpm changeset:publish"
   },
   "author": "lihaha <i@lihaha.cn>",
